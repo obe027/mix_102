@@ -1,10 +1,24 @@
-.container {
-  width: 375px;
-  height: 6000px;
+
+.framework {
+  position: fixed;
   margin: 0 auto;
-  position: absolute;
+  width: 300px;
   top: 0;
   bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container {
+  width: 255px;
+  margin: 0 auto;
+  position: absolute;
+  overflow-y: scroll;
+  overflow: hidden;
+  padding-bottom: 200px;
+  top: 114px;
+  bottom: auto;
   right: 0;
   left: 0;
   background-color: #e6e6e6;
@@ -12,16 +26,14 @@
 
 img {
   width: 100%;
-  image-resolution:144dpi;
 }
 
-.text {
+p, h3 {
   margin-top: auto;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-family: verdana;
-  font-size: 14px;
-  color: black;
+  font-size: 12px;
 
 }
 
@@ -33,17 +45,17 @@ img {
 
 .arrow-down:after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.5);
   position: absolute;
   margin: auto;
-  margin-top: 495px;
+  margin-top: 310px;
   top: 0;
   right: 0;
   left: 0;
-  border-right: 12px solid #ffc213;
-  border-bottom: 12px solid #ffc213;
+  border-right: 8px solid #ffc213;
+  border-bottom: 8px solid #ffc213;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   -webkit-animation: 3s arrow infinite ease;
@@ -52,7 +64,7 @@ img {
 
 @-webkit-keyframes arrow {
   0%, 100% {
-    top: 50px;
+    top: 60px;
   }
   50% {
     top: 80px;
@@ -60,45 +72,59 @@ img {
 }
 @keyframes arrow {
   0%, 100% {
-    top: 50px;
+    top: 60px;
   }
   50% {
     top: 80px;
   }
 }
 
-#graphic1 {
+#quote1 {
+
   width: auto;
-  height: 200px;
-  background-color: green;
+  height: 140px;
+  background-color: #eedaa9;
 }
 
-#quote1 {
+#quote2 {
+
   width: auto;
-  height: 200px;
-  background-color: orange;
+  height: 155px;
+  background-color: #eedaa9;
+}
+
+#quote3 {
+
+  width: auto;
+  height: 180px;
+  background-color: #eedaa9;
+}
+
+#quote4 {
+
+  width: auto;
+  height: 140px;
+  background-color: #eedaa9;
+}
+
+.quotes {
+  font-size: 17px;
+  font-family: georgia;
+  text-align: center;
+
+}
+.quotename {
+  font-size: 10px;
+  font-family: verdana;
+  text-align: bottom left;
+
+}
+
+#graphic1 {
+  width: auto;
 }
 
 #graphic2 {
   width: auto;
-  height: 700px;
-  background-color: grey;
-
-.bounce {
-  position:fixed;
-  left:50%;
-  bottom:0;
-  margin-top:-25px;
-  margin-left:-25px;
-  height:50px;
-  width:50px;
-  background:red;
-  -webkit-animation:bounce 1s infinite;
-}
-
-@-webkit-keyframes bounce {
-  0%       { bottom:5px; }
-  25%, 75% { bottom:15px; }
-  50%      { bottom:20px; }
-  100%     {bottom:0;}
+  margin-right: 10px;
 }
